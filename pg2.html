@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parcial</title>
+		<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<h1 style="color: red; font-family:Helvetica;font-weight:bold; "><big><center> Capitulo 2</big></center></h1>
+<body style="background-image: url(fondoprin.jpg);">
+<bgsound src="musica1.mp3" loop="1">
+<center>
+
+
+<div id="c1" style="position: absolute; height:55.5%;width:46.5%;border:solid red 5px;left: 4%; bottom: 25%">
+<div class="c2" id="ani1"></div>
+<button onclick="hola2()" class="bo2" id="bo2" onmousedown="sonido2.play()"> Animar</button>
+<script >
+
+	var hola1=function(){
+		n=document.getElementById('ani1');
+		n.className='c2';
+		
+
+	}
+	var hola2=function(){
+		n2=document.getElementById('ani1');
+		n2.className='c22';
+		setTimeout(hola1,4500);
+	}
+
+
+
+		var sonido2 = new Audio();
+		sonido2.src="escucha2.mp3";
+
+
+</script>
+	<br><br>
+</div>
+
+
+
+<div id="c2" style="position: absolute;height:52.8%;width:43%;border:solid red 5px;left: 53%; bottom: 25%">
+
+	
+
+	<button class="bo2" id="bo2" onmousedown="sonido1.play()"> Escuchar</button>
+<script >
+	var sonido1 = new Audio();
+	sonido1.src="lee2.mp3";
+</script>
+	<br><br><br><br>
+	<h1><center><em>¡Esto tiene que cambiar! se propuso un buen día, harta de que sus compañeros del
+bosque le recriminaran por su poco esfuerzo al realizar sus tareas.
+<br><br>
+Y es que había optado por no intentar siquiera realizar actividades tan sencillas
+como amontonar hojitas secas caídas de los árboles en otoño, o quitar piedrecitas
+de camino hacia la charca donde chapoteaban los calurosos días de verano.<em><center><h1>
+	<br><br>
+</div>
+
+<form action="pg2.html">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<input type="submit" name="boton1" value="Siguiente" class="bp">
+</form>
+</center>
+
+
+</body>
+</html>

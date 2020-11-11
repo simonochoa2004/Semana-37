@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parcial</title>
+		<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<h1 style="color: green; font-family:Helvetica;font-weight:bold; "><big><center> Capitulo 1</big></center></h1>
+<body style="background-image: url(fondoprin.jpg);">
+<bgsound src="musica1.mp3" loop="1">
+<center>
+
+
+
+
+<div id="c1" style="position: absolute;height:52.8%;width:43%;border:solid green 5px;left: 4%; bottom: 25%">
+
+<button class="bo1" id="bo1" onmousedown="sonido1.play()"> Escuchar</button>
+<script >
+	var sonido1 = new Audio();
+	sonido1.src="lee1.mp3";
+</script>
+	<br><br><br><br>
+	<h1><center><em>¡Caramba, todo me sale mal! se lamenta constantemente Uga, la tortuga. Y es que
+no es para menos: siempre llega tarde, es la última en acabar sus tareas, casi
+nunca consigue premios a la rapidez y, para colmo es una dormilona.
+<em><center><h1>
+	<br><br>
+</div>
+
+
+
+
+
+<div id="c2" style="position: absolute;height:55.5%;width:46.5%;border:solid green 5px;left: 50%; bottom: 25%">
+
+	<div class="c1" id="ani1"></div>
+<button onclick="hola2()" class="bo1" id="bo1" onmousedown="sonido2.play()"> Animar</button>
+<script >
+	var hola1=function(){
+		n=document.getElementById('ani1');
+		n.className='c1';
+		
+
+	}
+	var hola2=function(){
+		n2=document.getElementById('ani1');
+		n2.className='c12';
+		setTimeout(hola1,4500);
+	}
+
+
+
+		var sonido2 = new Audio();
+		sonido2.src="escucha1.mp3";
+
+
+</script>
+	<br><br>
+</div>
+
+<form action="pg2.html">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<input type="submit" name="boton1" value="Siguiente" class="bp">
+</form>
+</center>
+
+
+</body>
+</html>
